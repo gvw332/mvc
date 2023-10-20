@@ -12,7 +12,7 @@ class MyAutoload{
 
         if ($_SERVER['SERVER_NAME'] == 'localhost') {
             define('HOST', 'http://' . $host . '/tfe-ifosup-gvw/');
-            define('ROOT', $root . '/tfe-ifosup-gvw/');
+            define('ROOT', $root . '/mvc/');
         } else {
             define('HOST', 'https://' . $host . '/');
             define('ROOT', '/' . $root . '/');
@@ -58,8 +58,8 @@ if ($_SERVER['SERVER_NAME'] == 'localhost') {
 } else {
     // sur le site
     define('DB_HOST', 'localhost:3306');
-    define('DB_USER', 'gvw');
-    define('DB_PASS', 'BDD1234*');
+    define('DB_USER', '');
+    define('DB_PASS', '');
     define('DB_NAME', 'ifosup-tfe');
 }
  
