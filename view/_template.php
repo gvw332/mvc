@@ -11,4 +11,4 @@
 
 	<?php echo $contentPage;?>	
 
-<?php include('footer.php');?>
+
