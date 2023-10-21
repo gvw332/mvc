@@ -76,7 +76,7 @@ class Controller_Mdp extends Controller{
         $link = 'nouveau-mdp?u=' . $email_recherche . '&token=' . base64_encode($token);
 
         include('../phpmailer/envoi-mail-mdp.php');
-        $from = "mail@gvw-tech.be";
+        $from = "";
         $destinataire = $email_recherche;
         $objetmail = "Lien pour obtenir un nouveau mot de passe";
         $headers = "From:" . $from;     

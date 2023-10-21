@@ -60,6 +60,6 @@ if ($_SERVER['SERVER_NAME'] == 'localhost') {
     define('DB_HOST', 'localhost:3306');
     define('DB_USER', '');
     define('DB_PASS', '');
-    define('DB_NAME', 'ifosup-tfe');
+    define('DB_NAME', '');
 }
  

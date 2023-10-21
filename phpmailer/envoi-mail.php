@@ -18,7 +18,7 @@ function envoiMail($destinataire, $sujet, $message, $copie, $typeEmail){
 
     $mail = new PHPMailer(true); 
     $mail->IsSMTP(); //appel du constructeur PHPMailer pour paramétrer le serveur smtp
-    $mail->Host = 'gvw-tech.be';
+    $mail->Host = '';
     $mail->Port = 465;
     $mail->SMTPAuth = true;
 
@@ -31,8 +31,8 @@ function envoiMail($destinataire, $sujet, $message, $copie, $typeEmail){
                 'allow_self_signed' => true
             )
         );
-        $mail->Username = "mail@gvw-tech.be";
-        $mail->Password = 'Mail003322*/';
+        $mail->Username = "";
+        $mail->Password = '';
     }
 
     $mail->CharSet =  'UTF-8'; //'iso-8859-1';
@@ -42,13 +42,13 @@ function envoiMail($destinataire, $sujet, $message, $copie, $typeEmail){
 
     $mail->smtpConnect();
 
-    $mail->From = 'mail@gvw-tech.be';
+    $mail->From = '';
 
     $mail->FromName = 'Ceci est un mail automatique , merci de ne pas y répondre';
     if ($copie) {
-        $mail->addAddress('mail@gvw-tech.be');
+        $mail->addAddress('');
     }
-    $mail->addEmbeddedImage(dirname(__FILE__) . '/gvw-logo-nb.png', 'gvwtech');
+    $mail->addEmbeddedImage(dirname(__FILE__) . '', '');
 
     if ($typeEmail == 'contact') {
         $htmlMessage = '<html>
@@ -64,9 +64,9 @@ function envoiMail($destinataire, $sujet, $message, $copie, $typeEmail){
         <div style="display:inline-flex;  ">
             <img  style="width: 150px" src="cid:gvwtech">        
             <div style="padding-left:50px;">        
-                <p>gvw-tech</p>
-                <p>54, Rue de la Brouette</p>
-                <p>5030 Gembloux</p>    
+                <p>nom de société</p>
+                <p>adress</p>
+                  
             </div>
         </div>
     </body>

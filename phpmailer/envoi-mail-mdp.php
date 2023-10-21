@@ -18,7 +18,7 @@ function envoiMailMdp($destinataire, $sujet, $message, $copie = false){
   
     $mail->IsSMTP();    // Appel du constructeur PHPMailer pour paramétrer le serveur smtp
 
-    $mail->Host = 'gvw-tech.be';
+    $mail->Host = '';
 
     $mail->Port = 465;
 
@@ -37,9 +37,9 @@ function envoiMailMdp($destinataire, $sujet, $message, $copie = false){
             )
         );
 
-        $mail->Username = "mail@gvw-tech.be";
+        $mail->Username = "";
 
-        $mail->Password = 'Mail003322*/';
+        $mail->Password = '';
     }
 
 
@@ -52,13 +52,13 @@ function envoiMailMdp($destinataire, $sujet, $message, $copie = false){
 
     $mail->smtpConnect();
 
-    $mail->From = 'mail@gvw-tech.be'; 
+    $mail->From = ''; 
 
     $mail->FromName = 'Ceci est un mail automatique , merci de ne pas y répondre';
     if ($copie) {
-        $mail->addAddress('mail@gvw-tech.be');
+        $mail->addAddress('');
     }
-    $mail->addEmbeddedImage(dirname(__FILE__) . '/gvw-logo-nb.png', 'gvwtech');
+    $mail->addEmbeddedImage(dirname(__FILE__) . '', '');
 
     $htmlMessage = '<html>
     <body>
@@ -72,9 +72,9 @@ function envoiMailMdp($destinataire, $sujet, $message, $copie = false){
     <div style="display:inline-flex;  ">
         <img  style="width: 150px" src="cid:gvwtech">        
         <div style="padding-left:50px;">        
-        <p>gvw-tech</p>
-        <p>54, Rue de la Brouette</p>
-        <p>5030 Gembloux</p>    
+        <p>nom de société</p>
+        <p>adresse</p>
+            
         </div>
     </div>
 

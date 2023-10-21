@@ -130,15 +130,6 @@ class Model{
         }
         return $result;
     }
-    // Fonction qui permet de donner le format en Jour Mois Année 
-    static function dateJMA($date){
-        $timestamp = strtotime($date);
 
-        // Formatage de la date
-        $date_formatee = date('d/m/Y', $timestamp);
-
-        // Affichage de la date
-        return $date_formatee;
-    }
     
 }
