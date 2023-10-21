@@ -5,11 +5,8 @@ class Routeur{
     // Structure de l'application basée sur les tables de la base de données   
     private $request;
     private $routes = [
-        "accueil"        => ['controller' => 'Controller_Principal', 'method' => 'Accueil'],
-        "services"       => ['controller' => 'Controller_Principal', 'method' => 'Services'],
-
-        "devis"          => ['controller' => 'Controller_Devis', 'method' => 'devis'],
-        "devis.ctrl"     => ['controller' => 'Controller_Devis', 'method' => 'genere_pdf'],
+  
+       
 
         "connexion"      => ['controller' => 'Controller_Connexion', 'method' => 'connexion'],
         "connexion.ctrl" => ['controller' => 'Controller_Connexion', 'method' => 'connexion_ctrl'],
@@ -29,13 +26,7 @@ class Routeur{
         "admin.update" => ['controller' => 'Controller_Utilisateur', 'method' => 'update'],
         "admin.save"   => ['controller' => 'Controller_Utilisateur', 'method' => 'save'],
 
-        "actualites"   => ['controller' => 'Controller_Actualites', 'method' => 'actualites'],
-        "actu-delete"  => ['controller' => 'Controller_Actualites', 'method' => 'delete'],
-        "actu-update"  => ['controller' => 'Controller_Actualites', 'method' => 'update'],
-        "actu-save"    => ['controller' => 'Controller_Actualites', 'method' => 'save'],
 
-        "contact"      => ['controller' => 'Controller_Contact', 'method' => 'contact'],
-        "contact.ctrl" => ['controller' => 'Controller_Contact', 'method' => 'contact_ctrl'],
 
     ];
     // Cette fonction interragit avec l'index.php pour récupérer tout ce qu'on écrit dans la barre de navigation en localhost

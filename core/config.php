@@ -11,7 +11,7 @@ class MyAutoload{
         $host = $_SERVER['HTTP_HOST'];
 
         if ($_SERVER['SERVER_NAME'] == 'localhost') {
-            define('HOST', 'http://' . $host . '/tfe-ifosup-gvw/');
+            define('HOST', 'http://' . $host . '/mvc/');
             define('ROOT', $root . '/mvc/');
         } else {
             define('HOST', 'https://' . $host . '/');

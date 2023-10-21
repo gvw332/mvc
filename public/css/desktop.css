@@ -1,0 +1,214 @@
+/* NAV 1*/
+.login-nom{
+  font-size: 2em;
+  color:goldenrod;
+}
+nav.nav-non-co{
+  width: 100%;
+  background-color: rgb(24, 108, 108);
+  color:white;
+  display:inline-flex; 
+  justify-content: center;
+
+}
+.a-co,.a-disco{
+  border:1px solid yellowgreen;
+  text-decoration: none;
+}
+
+nav.nav-non-co a{
+  text-decoration: none;
+  color:white;
+  font-size: 18px;
+}
+
+/* NAV 2*/
+
+/* Style pour la navigation */
+.nav-liste-pages {
+  background-color:  rgb(138, 220, 113);
+  color: #000000;
+  padding: 10px;
+}
+.nav-liste-pages ul{
+  list-style-type: none;
+  display:flex;
+  justify-content: space-around;
+}
+
+.nav-liste {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-liste li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.nav-liste a {
+  text-decoration: none;
+  color: #000000;
+  padding: 5px 10px;
+  font-weight: 800;
+}
+
+.nav-liste a.active {
+  background-color:  rgb(138, 220, 113);
+  border-radius: 5px;
+  color: #000000;
+  font-weight: 800;
+  font-size: 1.3em;
+}
+
+
+/* CONNEXION */ £
+
+/* Style pour la page de connexion */
+#contenu-connection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  background-color: rgb(138, 220, 113);
+}
+
+#contenu-connection form {
+  max-width: 300px;
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin:auto;
+}
+
+#contenu-connection h2 {
+  font-size: 24px;
+  
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#contenu-connection label {
+  display: block;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+#contenu-connection input {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+#contenu-connection a {
+  text-decoration: none;
+  color: #007bff;
+  display: block;
+  margin-top: 15px;
+}
+
+#contenu-connection button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+}
+
+#contenu-connection button:hover {
+  background-color: #0056b3;
+}
+
+/* INSCRIPTION */
+
+/* Style pour le formulaire d'inscription */
+#contenu-inscription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f7f7f7;
+}
+
+#inscriptionForm {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+#inscriptionForm h2 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#inscriptionForm div {
+  margin-bottom: 15px;
+}
+
+#inscriptionForm input {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#inscriptionForm label {
+  font-size: 14px;
+  color: #666;
+}
+
+#inscriptionForm input[type="checkbox"] {
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+#inscriptionForm a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+#inscriptionForm a:hover {
+  text-decoration: underline;
+}
+
+/* Bouton d'inscription */
+#inscriptionForm button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  
+}
+
+#inscriptionForm button:hover {
+  background-color: #0056b3;
+  
+}
+
+/* Gestion des erreurs */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
